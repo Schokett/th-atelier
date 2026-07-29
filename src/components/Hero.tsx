@@ -33,26 +33,30 @@ function Hero({ imgSrc, imgWidth, imgHeight }: HeroProps) {
           transition: "opacity 150ms ease-out, transform 150ms ease-out",
           pointerEvents: navOpacity === 0 ? "none" : "auto",
         }}>
-        <div className="flex gap-2 items-center justify-between text-neutral-700/70 text-sm font-comfortaa tracking-widest">
-          <div className="uppercase font-serif cursor-pointer hover:text-neutral-700">Home</div>
-          <div className="uppercase font-serif cursor-pointer hover:text-neutral-700">
+        <div className="flex gap-2 items-center justify-center lg:justify-between text-neutral-700/70 text-sm font-comfortaa tracking-widest">
+          <div className="hidden lg:block uppercase font-serif cursor-pointer hover:text-neutral-700"></div>
+          <div className="hidden lg:block uppercase font-serif cursor-pointer hover:text-neutral-700">
             Über Mich
           </div>
-          <div className="uppercase font-serif cursor-pointer hover:text-neutral-700">
+          <div className="hidden lg:block uppercase font-serif cursor-pointer hover:text-neutral-700">
             Portfolio
           </div>
           <div className="">
-            <h1 className="font-mrs-saint-delafield  text-8xl text-center text-neutral-700">
+            <h1 className="font-mrs-saint-delafield text-6xl lg:text-8xl text-center text-neutral-700 whitespace-nowrap ">
               Th-Atelier
             </h1>
-            <h2 className="font-cormorant-garamond  text-lg text-center text-neutral-700/70 uppercase tracking-wider">
+            <h2 className="hidden lg:flex font-cormorant-garamond text-lg text-center text-neutral-700/70 uppercase tracking-wider">
               Authenthisch & Leidenschaftlich
             </h2>
           </div>
 
-          <div className="uppercase font-serif cursor-pointer hover:text-neutral-700">Preise</div>
-          <div className="uppercase font-serif cursor-pointer hover:text-neutral-700">Kontakt</div>
-          <div className="flex gap-8">
+          <div className="hidden lg:block uppercase font-serif cursor-pointer hover:text-neutral-700">
+            Preise
+          </div>
+          <div className="hidden lg:block uppercase font-serif cursor-pointer hover:text-neutral-700">
+            Kontakt
+          </div>
+          <div className="hidden lg:flex gap-8 ">
             <span className="">
               <img
                 src={whatsappIcon.src}
@@ -64,7 +68,7 @@ function Hero({ imgSrc, imgWidth, imgHeight }: HeroProps) {
               <img
                 src={instagramIcon.src}
                 alt="Instagram icon"
-                className="xl:w-5 h-5 opacity-50 cursor-pointer hover:opacity-70"
+                className="w-5 h-5 opacity-50 cursor-pointer hover:opacity-70"
               />
             </span>
           </div>

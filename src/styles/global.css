@@ -26,8 +26,18 @@
   src: url("../fonts/cormorant-garamond-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* mrs-saint-delafield-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mrs Saint Delafield";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mrs-saint-delafield-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @theme {
   --font-allura: "Allura", cursive;
   --font-marcellus: "Marcellus", serif;
   --font-cormorant-garamond: "Cormorant Garamond", serif;
+  --font-mrs-saint-delafield: "Mrs Saint Delafield", cursive;
 }

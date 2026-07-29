@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.tsx';
+import MeSection from '../components/meSection.tsx';
 import { getImage } from 'astro:assets';
 import heroSource from '../assets/hero.jpg';
 
@@ -22,4 +23,5 @@ const heroImg = await getImage({
     imgWidth={heroImg.attributes.width}
     imgHeight={heroImg.attributes.height}
   />
+  <MeSection client:load />
 </Layout>
